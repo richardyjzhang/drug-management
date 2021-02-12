@@ -1,0 +1,12 @@
+.loginWrapper {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 20%;
+    min-width: 300px;
+    transform: translate(-50%, 0);
+}
+
+.loginButton {
+    width: 100%;
+}
