@@ -1,0 +1,23 @@
+server:
+  port: 8080
+  tomcat.max-threads: 0
+  tomcat.uri-encoding: UTF-8
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.zhangrichard.drugmanagement.**.model
+
+spring:
+  # common
+  http:
+    encoding:
+      force: true
+      charset: UTF-8
+      enabled: true
+  # MySQL
+  datasource:
+    name: mysql-dev
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://127.0.0.1/drugManagement
+    username: root
+    password: 123456
